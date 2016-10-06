@@ -23,6 +23,15 @@
 	</label>
 	<a href="" class="@{{habilitado == 1 ? 'white' : 'habilitado'}}"></a>
 
+	<h1>Ocultar el espacio en blanco de un Select</h1>
+	<!--en el controllador poner  $scope.cant_rows = 15;-->
+	<select ng-model="cant_rows" ng-init="cant_rows='15'"> 
+      	<option value="15">15</option> 
+      	<option value="30">30</option>
+      	<option value="70">70</option>
+      	<option value="100">100</option>
+    </select> 
+
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script> 
 </body>
 </html>
