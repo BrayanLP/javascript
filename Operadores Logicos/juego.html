@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<p>Adivina el número secreto, y colocalo en la ventana que se despliega</p>
+<p>Coloca cero si quieres cerrar el programa</p>
+<script type="text/javascript">
+	//Numero Maximo
+	var max = 100;
+	var min = 1;
+	var numero_secreto = Math.random() * (max - min )+ min;
+	var numero_secreto = parseInt(numero_secreto);
+	console.log(numero_secreto);
+	var mensaje = "Ingresa un Numero para adividar el número magico"
+	while(true){
+		var numero_del_usuario = prompt(mensaje, "0");
+		numero_del_usuario = parseInt(numero_del_usuario);
+		if(numero_del_usuario === numero_secreto){
+			alert("Ganaste!! Adivinaste el número segreto");
+			break;
+		}
+		else if (numero_del_usuario == 0){
+			break;
+		}
+		else if (numero_del_usuario > numero_secreto){
+			mensaje = "Lo sentimos, El número que ingresaste es mayor al número mágico"
+		}
+		else if (numero_del_usuario < numero_secreto){
+			mensaje = "Lo sentimos, El número que ingresaste es menor al número mágico"
+		}
+	}
+</script>
+</body>
+</html>

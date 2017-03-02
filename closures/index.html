@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <button id="btn">Click</button>
+<script type="text/javascript">
+	(function(){
+	document.getElementById("btn").addEventListener("click",function(){
+		console.log("Hizo Click en mi");
+	})
+
+	setTimeout(function(){
+		console.log(hola("Brayan Lp"));
+	},1000);
+
+	function hola (nombre){
+		function construct(){
+			return "hola " + nombre;
+		}
+		return construct();
+	}
+
+	})();
+</script>
+</body>
+</html>

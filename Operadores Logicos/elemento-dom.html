@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.mi_clase{
+			width: 100%;
+			height: 40px;
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+<div id="mi_div" class="mi_clase"></div>
+<script type="text/javascript">
+function $(selector){
+	return document.querySelector(selector);
+}
+var mi_clase = $("body");
+//var div = document.getElementById("mi_div");
+//var mi_clase = document.querySelector(".mi_clase");
+//div.classList.add("mi_clase");
+
+//console.log(div);
+
+console.log(mi_clase);
+</script>
+</body>
+</html>
